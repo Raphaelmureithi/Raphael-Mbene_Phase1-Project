@@ -1,13 +1,15 @@
+// write your code here
 let itemsEndpoint = "http://localhost:3000/items";
 
 document.addEventListener("DOMContentLoaded", () => {
   getItems();
-  document.querySelector("#buy-item").addEventListener("click", handleBuyItem);
-  console.log(showMessage);{
-
-  }
+  document.querySelector("#buy-item").addEventListener("click" , () => {
+    handleBuyItem(item);
+    document.innerHtml = "showMessage" 
+    console.log(showMessage);
+  });
 });
-
+// fetch item data from local server
 function getItems() {
   fetch(itemsEndpoint)
       .then(res => res.json())
@@ -19,7 +21,7 @@ function getItems() {
           firstItem.dispatchEvent(new Event("click"));
       });
 }
-
+// list items that are being sold
 function renderItemList(item) {
   const li = document.createElement("li");
   li.textContent = `${item.name}`;
@@ -28,21 +30,12 @@ function renderItemList(item) {
   ul.appendChild(li);
   li.classList.add("cloth");
   li.classList.add("item");
-
-  // Add delete button
-  const deleteButton = document.createElement("button");
-  deleteButton.textContent = "Delete";
-  deleteButton.addEventListener("click", () => {
-      removeItem(item.id);
-  });
-  li.appendChild(deleteButton);
-
   li.addEventListener("click", () => {
       handleItemClick(item);
   });
 }
 
-
+// display info about the items being sold 
 function handleItemClick(item) {
   const image = document.querySelector("img#image");
   image.src = item.image;
@@ -56,12 +49,12 @@ function handleItemClick(item) {
       item.stock - item.stock_sold + " stock left";
 }
 
-
+// display the amount of stock available for sale 
 function handleBuyItem(Item) {
   const itemDiv = document.querySelector("#stock left");
   const item = itemDiv.textContent.split(" ")[0];
   if (item> 0) {
-      itemDiv.textContent = items - 1 + " stock left";
+      itemDiv.textContent = item - 1 + " stock left";
   }
   
 }
