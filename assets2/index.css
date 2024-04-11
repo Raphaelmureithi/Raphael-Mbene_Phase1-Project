@@ -1,7 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-image:url(assets2/backgroundimg2.jpeg) ;
   }
   
@@ -23,12 +21,4 @@ body {
   img{
     width: 25vw;
   }
-  card{
-    width: 25vw;
-    height: 25vw;
-    border-radius: 10px;
-    background-color: rgb(48, 120, 202);
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+  

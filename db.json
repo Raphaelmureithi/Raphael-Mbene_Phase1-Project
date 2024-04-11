@@ -1,12 +1,12 @@
 {
-    "clothes":[
+    "items":[
         {
             "id":1,
             "name":" Rick Owens T-Shirt",
             "description":"Rick Owens",
             "price":"$45",
             "size":"medium,large,XL",
-            "image":"tshirt.jpg",
+            "image":"https://i.pinimg.com/564x/8a/6b/d8/8a6bd816c0f277d99d67750ae84da4c1.jpg",
             "stock left":"6"
         },
         {

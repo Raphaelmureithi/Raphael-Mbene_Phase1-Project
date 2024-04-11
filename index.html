@@ -183,39 +183,52 @@ buy-item button{
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Code Challenge</title>
+    <title>Stop n Thrift</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"
     />
     <link rel="stylesheet" href="assets2/index.css" />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
   <body>
+    <style>
 
+body {
+    font-family: Arial, sans-serif;
+    background-image:url(assets2/backgroundimg2.jpeg) ;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  name{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(245, 245, 245);
+    background-color: #333;
 
-
-
-
-
-
-    <!-- navbar -->
-    <div class="heading">
-      <div class="item">
-        <h2 class="ui header">
-          <i class="orange Cloth icon"></i>
-          <div class="content">STOP N THRIFT</div>
-          <div class="sub header" id="subtitle">BUY CLOTHES AND ACCESSORIES</div>
-        </h2>
-      </div>
-    </div>
+  }
+  img{
+    width: 25vw;
+  }
+    </style>
+<header>
+  <h1>Stop N Thrift</h1>
+</header>
+<div class="ui centered grid">Buy clothes and accessories</div>
+<br><br>  
 
     <div class="ui centered grid">
       <div class="four wide column">
         <div class="list-container">
           <!-- side menu -->
-          <ul class="ui divided list" id="clothes">
-            <li class ="Cloth item">. clothes will go here</li>
+          <ul class="ui divided list" id="items">
+            <li class ="Cloth item">. item names will go here </li>
           </ul>
         </div>
       </div>
@@ -223,17 +236,19 @@ buy-item button{
       <!-- poster -->
       <div class="four wide column">
         <img
-          id="poster"
+          id="image" 
           src="assets2/placeholderImage.png"
           alt="[CLOTH ITEMS]"
         />
       </div>
 
+
+
       <!-- showing info -->
       <div class="four wide column">
         <div class="ui cards" id="showing">
           <div class="card">
-            <div id="name" class="name">[CLOTH ITEM]</div>
+            <div id="title" class="title">[ITEM  NAME]</div>
               <div class="description">
                 <div id="item-info">[INSERT ITEM DESCRIPTION HERE]</div>
                  <div id="price" class="price">[INSERT ITEM PRICE</div>
@@ -250,7 +265,7 @@ buy-item button{
         </div>
       </div>
     </div>
-    <script src="src/index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
 
