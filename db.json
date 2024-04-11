@@ -15,7 +15,7 @@
             "description":"Denim jeans",
             "price":"$99",
             "size":"regular fit,baggy fit",
-            "image":"jeans.jpg",
+            "image":"https://i.pinimg.com/236x/66/03/62/66036274c026b1cf1bfbe823a1264105.jpg",
             "stock left":"10"
 
         },
@@ -25,7 +25,7 @@
             "description":"Vlone hoodie",
             "price":"$119",
             "size":",regular fit,baggy fit",
-            "image":"hoodie.jpg",
+            "image":"https://i.pinimg.com/236x/a5/fa/dc/a5fadc09099968e960965e72956ba5ba.jpg",
             "stock left":"5"
         },
         {
@@ -33,7 +33,7 @@
             "name":"sweat shirt",
             "price":"$65",
             "size":",regular fit,baggy fit",
-            "image":"sweat shirt.jpg",
+            "image":"https://i.pinimg.com/564x/6c/61/bd/6c61bdb9be7a57212de29d8594ac8893.jpg",
             "stock left":"10"
         },
        
@@ -42,7 +42,7 @@
             "name":"cargo pants",
             "price":"$50",
             "size":",regular fit,baggy fit",
-            "image":"cargo pants.jpg",
+            "image":"https://i.pinimg.com/564x/22/11/a7/2211a747c2ed5e9a4ccd6ca7873b9933.jpg",
             "stock left":"10"
         },
         {
@@ -50,27 +50,27 @@
             "name":"shoes",
             "description":"Air Force Ones",
             "price":"$90",
-            "image":"shoes.jpg",
+            "image":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/zrhpg00meg0lsfrgkzkq/air-force-1-flyknit-2-shoes-DDsg2r.png",
             "stock left":"10"
         },
         {
             "id":"7",
             "name":"rings",
             "price":"$10",
-            "image":"rings.jpg"
+            "image":"https://i.pinimg.com/236x/09/7d/0e/097d0e8094628f1a13b3e68195e4cae4.jpg"
         },
         {
             "id":"8",
             "name":"watch",
             "price":"$65",
-            "image":"watch.jpg"
+            "image":"https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/6998851/1.jpg?6007"
         },
         {
             "id":"9",
             "name":"bracelet",
             "price":"$75",
             "description":"Chrome Hearts",
-            "image":"bracelet.jpg"
+            "image":"https://www.pablogiftshop.com/wp-content/uploads/2021/08/WhatsApp-Image-2023-03-14-at-10.39.14-jpeg.webp"
         }
     
     ]
