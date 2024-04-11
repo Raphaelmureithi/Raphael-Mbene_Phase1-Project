@@ -1,0 +1,202 @@
+let clothesEndpoint = "http://localhost:3000/clothes";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const clothesData = [
+  { name: 'T-Shirt', price: $45, image: 'tshirt.jpg' },
+  { name: 'Jeans', price: $99, image: 'jeans.jpg' },
+  { name: 'hoodie', price: $119, image: 'hoodie.jpg' },
+  {name:'sweat shirt', price: $45, image: 'sweat shirt.jpg' },      
+  { name:'cargo pants', price: $50, image: 'cargo pants.jpg' },
+  {name:'shoes', price: $90, image: 'shoes.jpg'},
+  {name: 'rings', price: $10, image:'rings.jpg'},
+  { name: 'Watch', price: $65, image: 'watch.jpg' },
+  { name: 'bracelet', price: $75, image: 'chromehearts.jpg' },
+];
+
+const clothesList = document.getElementById('clothesList');
+const  accessoriesList = document.getElementById('clothesList');
+const cartItems = document.getElementById('cartItems');
+const shoppingCart = document.getElementById('shoppingCart');
+const viewCartBtn = document.getElementById('viewCartBtn');
+const checkoutBtn = document.getElementById('checkoutBtn');
+const clothesTemplate = document.getElementById('clothesTemplate');
+
+// Render clothes items
+function renderClothes() {
+  clothesList.innerHTML = '';
+  clothesData.forEach(clothes => {
+    const clone = clothesTemplate.content.cloneNode(true);
+    clone.querySelector('.clothes-name').textContent = clothes.name;
+    clone.querySelector('.clothes-price').textContent = `$${clothes.price}`;
+    clone.querySelector('.clothes-image').src = clothes.image;
+    clone.querySelector('.add-to-cart-btn').addEventListener('click', () => addToCart(clothes));
+    clothesList.appendChild(clone);
+  });
+}
+
+
+// Add item to cart
+function addToCart(item) {
+  const li = document.createElement('li');
+  li.textContent = `${item.name} - $${item.price}`;
+  const removeBtn = document.createElement('button');
+  removeBtn.textContent = 'Remove';
+  removeBtn.classList.add('remove-btn');
+  removeBtn.addEventListener('click', () => removeItemFromCart(li));
+  li.appendChild(removeBtn);
+  cartItems.appendChild(li);
+}
+
+// Remove item from cart
+function removeItemFromCart(item) {
+  cartItems.removeChild(item);
+}
+
+
+// Checkout
+checkoutBtn.addEventListener('click', () => {
+  alert('Thank you for your purchase!');
+  cartItems.innerHTML = '';
+});
+
+// Initial render
+renderClothes();
+// Initial render
+renderAccessories();

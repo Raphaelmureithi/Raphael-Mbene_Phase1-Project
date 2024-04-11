@@ -1,0 +1,81 @@
+{
+    "clothes":[
+        {
+            "id":1,
+            "name":" Rick Owens T-Shirt",
+            "description":"Rick Owens",
+            "price":"$45",
+            "size":"medium,large,XL",
+            "image":"tshirt.jpg",
+            "stock left":"6"
+        },
+        {
+            "id":2,
+            "name":" jeans",
+            "description":"Denim jeans",
+            "price":"$99",
+            "size":"regular fit,baggy fit",
+            "image":"jeans.jpg",
+            "stock left":"10"
+
+        },
+        {
+         "id":3,
+            "name":" hoodie",
+            "description":"Vlone hoodie",
+            "price":"$119",
+            "size":",regular fit,baggy fit",
+            "image":"hoodie.jpg",
+            "stock left":"5"
+        },
+        {
+            "id":4,
+            "name":"sweat shirt",
+            "price":"$65",
+            "size":",regular fit,baggy fit",
+            "image":"sweat shirt.jpg",
+            "stock left":"10"
+        },
+       
+        {
+            "id":5,
+            "name":"cargo pants",
+            "price":"$50",
+            "size":",regular fit,baggy fit",
+            "image":"cargo pants.jpg",
+            "stock left":"10"
+        },
+        {
+             "id":"6",
+            "name":"shoes",
+            "description":"Air Force Ones",
+            "price":"$90",
+            "image":"shoes.jpg",
+            "stock left":"10"
+        },
+        {
+            "id":"7",
+            "name":"rings",
+            "price":"$10",
+            "image":"rings.jpg"
+        },
+        {
+            "id":"8",
+            "name":"watch",
+            "price":"$65",
+            "image":"watch.jpg"
+        },
+        {
+            "id":"9",
+            "name":"bracelet",
+            "price":"$75",
+            "description":"Chrome Hearts",
+            "image":"bracelet.jpg"
+        }
+    
+    ]
+
+}
+
+
+
